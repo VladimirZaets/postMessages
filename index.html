@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="index.js" defer></script>
+</head>
+<body>
+    <div>
+        <div>
+            <span>To local frame added <span class="addedToLocalFrame"></span> messages.</span>
+        </div>
+        <div>
+            <span>To external frame added <span class="addedToExternalFrame"></span> messages.</span>
+        </div>
+    </div>
+    <iframe src="frame.html" name="localFrame"></iframe>
+    <iframe src="https://fiddle.jshell.net/pxskgc9r/14/show/light" name="externalFrame"></iframe>
+    <form name="sendMessage">
+        <label>
+            <span>Select iframe</span>
+            <label>
+                <span>Local frame</span>
+                <input type="radio" name="selectFrame" value="local" checked/>
+            </label>
+            <label>
+                <span>External frame</span>
+                <input type="radio" name="selectFrame" value="external"/>
+            </label>
+        </label>
+        <div>
+            <label>
+                <span>Write message</span>
+                <input type="text" name="message"/>
+            </label>
+            <button name="send">Send massage</button>
+        </div>
+    </form>
+</body>
+</html>
