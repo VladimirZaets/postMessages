@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Bump version
+        run: npm version patch
       - name: Tag
         id: autotagger
         uses: butlerlogic/action-autotag@stable
