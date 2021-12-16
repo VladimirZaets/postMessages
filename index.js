@@ -1,4 +1,4 @@
-console.log('index');
+console.log('index1');
 (function () {
     var localFrame = window.frames.localFrame,
         externalFrame = window.frames.externalFrame,
